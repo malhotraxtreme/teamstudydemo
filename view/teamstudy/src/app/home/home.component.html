@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="notelistContainer" *ngFor="let note of notes" routerLink="/note/{{note.id}}">
+    <!-- <a class="routerlink"> -->
+    <div class="title">{{note.title}}</div>
+    <div class="author">-{{note.author}}</div>
+    <div class="date">{{note.timestamp.slice(0,11)}}</div>
+    <!-- </a> -->
+  </div>
+</div>
+<div class="row add">
+  <button class="addbtn" routerLink="/note">
+    +
+  </button>
+</div>

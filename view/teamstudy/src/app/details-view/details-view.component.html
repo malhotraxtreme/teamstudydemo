@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="title">
+    <input type="text" class="titleArea" value={{title}} [(ngModel)]="title" placeholder="Title"
+      [disabled]="this.noteData">
+  </div>
+  <div class="title">
+    <input type="text" class="authorArea" value={{author}} placeholder="Author" [(ngModel)]="author"
+      [disabled]="this.noteData">
+  </div>
+  <div class="quillcontainer">
+    <div id="editor">
+
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <button class="back" routerLink="/home">
+    Back
+  </button>
+  <button class="back" [hidden]="this.noteData" (click)="postNote()">
+    Post
+  </button>
+</div>

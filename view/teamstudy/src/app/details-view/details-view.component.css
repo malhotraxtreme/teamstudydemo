@@ -1,0 +1,42 @@
+.quillcontainer{
+    background: lightgray;
+    height: 300px;
+    width: 80%;
+    margin:20px auto;
+}
+
+.back{
+    background: transparent;
+    color: white;
+    border:1px solid white;
+    margin:30px auto;
+    font-size: 1.5rem;
+    width:100px;
+    text-decoration: none;
+    transition: all 0.4s ease;;
+}
+
+.back:hover{
+    color: rgb(40,40,55);
+    background: white;
+}
+
+.title{
+    width: 80%;
+    margin: auto;
+}
+
+.titleArea{
+    font-size: 2rem;
+    margin:20px auto;
+    color:black;
+    width: 100%;
+    padding: 10px;
+}
+
+.authorArea{
+        font-size: 1.3rem;
+        margin: 0 auto;
+        color:black;
+        width: 100%;
+}
